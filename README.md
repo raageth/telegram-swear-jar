@@ -19,7 +19,7 @@ key = "API KEY"
 SUPABASE_URL = "SUPABASE_URL"
 SUPABASE_KEY = "SUPABASE_KEY"
 ```
-4. Create the tables and view
+4. Create the tables
 !["records" table](images/db_records.png)
 !["words" table](images/db_words.png)
 5. Create the view

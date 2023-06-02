@@ -10,8 +10,23 @@ Messages are recorded and if the text matches any word in the list the bot will 
 
 ## Process
 1. Create a bot with [BotFather](https://t.me/botfather)
-2. Create a keys.py file and store the API key 
+2. Create a `keys.py` file and store the API key 
 ```python 
 key = "API KEY"
 ```
-3. Create the supabase table !["records" table](images/db_records.png)
+3. Create a supabase project and store the API url and key in `keys.py`
+```python 
+SUPABASE_URL = "SUPABASE_URL"
+SUPABASE_KEY = "SUPABASE_KEY"
+```
+4. Create the tables and view
+!["records" table](images/db_records.png)
+!["words" table](images/db_words.png)
+```sql
+create view score as
+select username, SUM(count) as total_count from records
+group by username
+order by total_count desc
+```
+
+

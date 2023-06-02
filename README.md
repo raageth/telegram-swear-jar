@@ -22,6 +22,7 @@ SUPABASE_KEY = "SUPABASE_KEY"
 4. Create the tables and view
 !["records" table](images/db_records.png)
 !["words" table](images/db_words.png)
+5. Create the view
 ```sql
 create view score as
 select username, SUM(count) as total_count from records

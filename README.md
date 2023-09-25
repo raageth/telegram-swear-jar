@@ -1,5 +1,5 @@
-# Word Counter Telegram Bot
-A telegram bot that allows users to set specific words and count the instances of each group member saying any of the words. [python-telegram-bot](https://docs.python-telegram-bot.org/en/stable/index.html#) and [Supabase](https://supabase.com/) used.
+# Telegram Swear Jar
+A telegram bot that allows users to set specific banned words and count the instances of each group member saying any of the words. [python-telegram-bot](https://docs.python-telegram-bot.org/en/stable/index.html#) and [Supabase](https://supabase.com/) used.
 
 ## Usage
 Add words that the users would like to count by running `/addword`. Send the words with a space as a delimiter. `/cancel` is used to cancel the interaction with the bot.
